@@ -1,0 +1,21 @@
+{
+  "name": "forgjs-exemples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx watchify index.js -o build.js"
+  },
+  "author": "Oussama Hamdaoui <oussamahamdaoui@live.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "@cesium133/forgjs": "^1.1.8",
+    "codemirror": "^5.43.0",
+    "highlight.js": "^9.13.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "watchify": "^3.11.0"
+  }
+}
