@@ -83,7 +83,7 @@ input:focus{
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../../logo.png');
+  background-image: url('./logo.png');
   margin-top: 150px;
 }
 
