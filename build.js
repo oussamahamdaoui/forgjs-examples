@@ -145,9 +145,8 @@ class customR extends Rule{
 function getScore(){
   const sum = $('.valid').length + ($('.green').length / 2);
   const max = $('input').length + NUMER_OF_CODE_VALIDATIONS;
-  console.log(sum, max);
   const score = Math.round((sum/max) * 100) ;
-  return 100;
+  return score;
 }
 
 function updateScore(){
