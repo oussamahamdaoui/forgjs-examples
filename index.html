@@ -19,6 +19,11 @@
     </div>
     <div class="header">
     </div>
+    <p>
+      Hey, lets play a small game all you have to do is fill all these text fileds, to help you
+      you can see the rule that's implemented.<br>
+      Good luck!
+    </p>
     <div id="score">
       <div>Your score</div>
       <span class="precent">0</span>/
@@ -29,7 +34,7 @@
       <div>
         <h2>Email rule:</h2>
         <div class="content">
-          <input data-type="email" placeholder="Enter email" />
+          <input data-type="email" placeholder="Type here" />
         </div>
         <div class="code">
 <pre><code class="javascript">
@@ -43,7 +48,7 @@ const email = new Rule({
       <div>
         <h2>Custom rule:</h2>
         <div class="content">
-          <input data-type="phone-number" placeholder="Enter phone number" />
+          <input data-type="phone-number" placeholder="Type here" />
         </div>
         <div class="code">
 <pre><code class="javascript">
@@ -59,7 +64,7 @@ const PhoneNumber = new Rule({
       <div>
         <h2>Password rule:</h2>
         <div class="content">
-          <input data-type="password" placeholder="Enter password" />
+          <input data-type="password" placeholder="Type here" />
         </div>
         <div class="code">
           <pre><code class="javascript">
@@ -76,7 +81,7 @@ const PassWord = new Rule({
       </div>
       <div>
         <h2>Url rule:</h2>
-        <div class="content"><input data-type="url" placeholder="Enter url" /></div>
+        <div class="content"><input data-type="url" placeholder="Type here" /></div>
         <div class="code">
           <pre><code class="javascript">
 const url = new Rule({
@@ -90,10 +95,10 @@ const url = new Rule({
       <div>
         <h2>Multiple rules:</h2>
         <div class="content">
-          <input data-type="street-number" placeholder="Enter Street Number" />
-          <input data-type="street" placeholder="Enter Street" />
-          <input data-type="zipcode" placeholder="Enter Zip Code" />
-          <input data-type="country" placeholder="Enter Country" />
+          <input data-type="street-number" placeholder="Type street number" />
+          <input data-type="street" placeholder="Type street" />
+          <input data-type="zipcode" placeholder="Type zipcode" />
+          <input data-type="country" placeholder="Type country" />
         </div>
         <div class="code">
 <pre><code class="javascript">
@@ -124,9 +129,17 @@ const streetNumber = new Rule({
         
         <div class="content">
             <h3>Edit this code to try some Rules</h3>
+            <p>
+              Last game.<br>
+              Edit the code so that you have at least two valid tests!
+            </p>
         </div>
         <div class="code editable">
 <textarea id="palyArround">
+/*
+Make any changments you want,
+Your goal: get at least two valid tests
+*/
 const password = new Rule({
   type: 'password',
   minLength: 8,
@@ -134,8 +147,9 @@ const password = new Rule({
   matchesOneOf: ['@', '_', '-', '.', '?', '$'],
   numbers: 1,
   uppercase: 1,
+  custom: val => val.split('-').length > 0,
 });
-password.test('$_Adsdss4');
+password.test('change this code');
 password.test('qwerty');
 
 </textarea>

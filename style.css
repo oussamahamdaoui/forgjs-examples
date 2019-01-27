@@ -18,12 +18,19 @@ body{
   padding: 0;
 }
 
-h1{
+h1, p{
   max-width: 1200px;
   margin: auto;
   margin-top: 20px;
   padding-left:10px; 
   margin-bottom: 20px;
+}
+.content > p{
+  text-align: justify;
+}
+
+p{
+  text-align: center;
 }
 .container{
   max-width: 1200px;
